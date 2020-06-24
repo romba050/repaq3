@@ -14,7 +14,7 @@ TARGET := repaq
 
 BIN_TARGET := ${TARGET}
 
-CXX := g++
+CXX := em++
 CXXFLAGS := -std=c++11 -g -I${DIR_INC} $(foreach includedir,$(INCLUDE_DIRS),-I$(includedir))
 LIBS := -lz -lpthread
 LD_FLAGS := $(foreach librarydir,$(LIBRARY_DIRS),-L$(librarydir)) $(LIBS)
